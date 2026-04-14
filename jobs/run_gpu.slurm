@@ -4,7 +4,8 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=2
 #SBATCH --mem=4G
-#SBATCH --partition=gpu
+#SBATCH --gpus=v100:1
+#SBATCH --partition=gpu-v100
 #SBATCH --output=logs/slurm-%j.out
 
 source /etc/profile
